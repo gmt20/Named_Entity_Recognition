@@ -1,6 +1,6 @@
 # Named_Entity_Recognition
 
-In this jupyter notebook, I ahve applied Named Entity Recognition on MIT Movie data. Please find the data here(https://groups.csail.mit.edu/sls/downloads/movie/).
+In this jupyter notebook, I have applied Named Entity Recognition on MIT Movie data. Please find the data here(https://groups.csail.mit.edu/sls/downloads/movie/).
 I have trained my nueral network on trivia10k13train.bio	and tested it on trivia10k13test.bio
 
 I have been recently expsosed to the mysterious world of deep learning. LSTM-RNN (Long Short Term memory Recurrent Neural Networks) is of the fascinating model, I recently used for Named Entity Recognition on this MIT movie dataset. In this notebook, I have tried different word embeddings.
