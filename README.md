@@ -20,6 +20,8 @@ wv_embeddings_google = models.KeyedVectors.load_word2vec_format('/root/input/Goo
 The performance of this model is -
 
 ![alt_text](https://github.com/gmt20/Named_Entity_Recognition/blob/master/Random.png)
+
+
 2) Glove3 Pre-trained word vectors from Stanford NLP which is created using co-occurrence matrix. If you will visit the website, you will see that you can create your own word embeddings using your data(may be relevant word embeddings). But I am using Glove3 common crawler pretrained word vectors.The model contains 300-dimensional vectors of 840 billion (!!) words and phrases. 
 
 
@@ -46,6 +48,9 @@ word_embedding_glove = glove.Glove.load_stanford('glove.840B.300d.out.txt' )
 word_embedding_glove.word_vectors.shape
 initial_embedding_matrix = word_embedding_glove.word_vectors
 The performance of Glove3 Word Embedding used in Bi-LSTM model -
+
 ![alt_text](https://github.com/gmt20/Named_Entity_Recognition/blob/master/golve3.png)
+
+
 
 Well , we can see that there is no improvement in using word embedding. May be this post can help."TK"
