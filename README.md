@@ -2,12 +2,12 @@
 
 In this jupyter notebook, I have applied Named Entity Recognition on MIT Movie data. Please find the data here(https://groups.csail.mit.edu/sls/downloads/movie/).
 I have trained my nueral network on trivia10k13train.bio	and tested it on trivia10k13test.bio
-
-I have been recently expsosed to the mysterious world of deep learning. LSTM-RNN (Long Short Term memory Recurrent Neural Networks) is of the fascinating model, I recently used for Named Entity Recognition on this MIT movie dataset. In this notebook, I have tried different word embeddings.
-First, lets see what is a word embedding. It is a technique in which words or phrases from the vocabulary are mapped to vectors of real numbers. So, we have three options for chosing our embedding matrix.
+ In this notebook, I have tried different word embeddings.
+Word Embedding is a technique in which words or phrases from the vocabulary are mapped to vectors of real numbers. So, I used follwing:
 a) Randomly initialized embedding matrix: In this method, the embedding matrix will be initialized randomly and the model will learn to differentiate the meaning of words just by looking at the data. It means the neural network will itself learn during the execution. 
- initial_embedding_matrix = np.random.randn(vocabulary_size, embedding_dim) / np.sqrt(embedding_dim)
-using this initialization on the dataset, I got following preformance-
+
+initial_embedding_matrix = np.random.randn(vocabulary_size, embedding_dim) / np.sqrt(embedding_dim)
+
 b) Pre-trained Word Embedding- There are some corpus of pre trained word embeddings. I have used two different word embeddings-
 1) Pre-trained word vectors from Google which were trained on a part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. We will use gensim library to unpack and upload the Google vectors.
 
@@ -51,6 +51,3 @@ The performance of Glove3 Word Embedding used in Bi-LSTM model -
 
 ![alt_text](https://github.com/gmt20/Named_Entity_Recognition/blob/master/golve3.png)
 
-
-
-Well , we can see that there is no improvement in using word embedding. May be this post can help."TK"
